@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class MyConstant {
   // Field
-  static Color primary = const Color.fromARGB(255, 6, 135, 170);
+  static Color primary = const Color.fromARGB(255, 237, 234, 79);
   static Color dark = Colors.black;
 
   // Method
