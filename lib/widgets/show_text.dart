@@ -13,6 +13,6 @@ class ShowText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(text, style: textStyle ?? MyConstant().h3Style(),);
+    return Text(text, style: textStyle ?? MyConstant().h3Active(),);
   }
 }

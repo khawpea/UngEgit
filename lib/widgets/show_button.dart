@@ -17,6 +17,7 @@ class ShowBottom extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         primary: MyConstant.primary,
+        onPrimary: MyConstant.dark,
       ),
       onPressed: pressFunc,
       child: Text(label),

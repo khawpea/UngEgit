@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 class MyConstant {
   // Field
-  static Color primary = Color.fromARGB(255, 210, 8, 210);
+  static Color primary = Color.fromARGB(255, 228, 200, 59);
   static Color dark = Colors.black;
   static Color active = Color.fromARGB(255, 236, 131, 46);
 
@@ -42,6 +42,15 @@ class MyConstant {
         textStyle: TextStyle(
       fontSize: 14,
       color: dark,
+      fontWeight: FontWeight.normal,
+    ));
+  }
+
+  TextStyle h3Active() {
+    return GoogleFonts.itim(
+        textStyle: TextStyle(
+      fontSize: 14,
+      color: active,
       fontWeight: FontWeight.normal,
     ));
   }

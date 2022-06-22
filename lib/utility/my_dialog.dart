@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:ungegat/utility/my_constant.dart';
 import 'package:ungegat/widgets/show_image.dart';
 import 'package:ungegat/widgets/show_text.dart';
+import 'package:ungegat/widgets/show_text_botton.dart';
 
 class MyDialog {
   final BuildContext context;
@@ -13,6 +14,8 @@ class MyDialog {
   Future<void> normalDialog({
     required String title,
     required String subTitle,
+    String? label,
+    Function()? pressFunc,
   }) async {
     showDialog(
       context: context,
@@ -28,6 +31,15 @@ class MyDialog {
           ),
           subtitle: ShowText(text: subTitle),
         ),
+        actions: [
+          pressFunc == null
+              ? ShowTextBotton(
+                  label: 'OK',
+                  pressFunc: () {
+                    Navigator.pop(context);
+                  })
+              : ShowTextBotton(label: label!, pressFunc: pressFunc),
+        ],
       ),
     );
   }
